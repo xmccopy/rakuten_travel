@@ -636,6 +636,9 @@ figure {
   font-weight: bold;
 }
 
+.p-main {
+  width: 100%;
+}
 .p-main .p-fv {
   display: flex;
   justify-content: center;
@@ -866,6 +869,7 @@ figure {
 }
 .p-main .shops_part1 .shop_items .shop_img {
   height: 60vh;
+  width: 100%;
   z-index: 1;
 }
 @media screen and (max-width: 767px) {
@@ -878,6 +882,7 @@ figure {
   color: #312f2f;
   font-size: 18px;
   top: 5%;
+  font-weight: bold;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -910,6 +915,7 @@ figure {
 }
 .p-main .shops_part2 .shop_items .shop_img {
   height: 30vh;
+  width: 100%;
   z-index: 1;
 }
 @media screen and (max-width: 767px) {
@@ -1345,6 +1351,10 @@ body,
   display: none;
 }
 
+.mySlides1 {
+  display: none;
+}
+
 .mySlides img {
   display: block;
   width: 100%;
@@ -1381,24 +1391,46 @@ body,
 
 /* Caption text */
 .text_slide {
-  color: #f2f2f2;
-  background-color: rgba(10, 10, 20, 0.1);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
-  border-radius: 10px;
+  width: 60%;
   font-size: 50px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 100px;
+  width: 35%;
   top: 75%;
-  left: 30%;
+  left: 20%;
+  z-index: 90;
   transform: translate(-50%);
   text-align: center;
 }
 @media screen and (max-width: 767px) {
   .text_slide {
+    width: 90%;
+    left: 50%;
+    top: 80%;
+  }
+}
+.text_slide .bg {
+  width: 60%;
+  background-color: #fff;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  width: 80%;
+  height: 15%;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%);
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .text_slide .bg {
     left: 50%;
   }
+}
+.text_slide .bg .text_slide1 {
+  margin-left: 20px;
+  font-size: 30px;
 }
 .text_slide .text_slide1 {
   margin-left: 20px;
@@ -1454,9 +1486,28 @@ body,
 
 @keyframes animate {
   from {
+    opacity: 0;
     transform: scale(1.1) rotateY(10deg);
   }
   to {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg);
+  }
+}
+.animate1 {
+  -webkit-animation-name: animate1;
+  -webkit-animation-duration: 2s;
+  animation-name: animate1;
+  animation-duration: 2s;
+}
+
+@keyframes animate1 {
+  from {
+    opacity: 0;
+    transform: scale(1.1) rotateY(10deg);
+  }
+  to {
+    opacity: 1;
     transform: scale(1) rotateY(0deg);
   }
 }
