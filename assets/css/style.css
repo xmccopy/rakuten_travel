@@ -207,7 +207,7 @@ figure {
   cursor: pointer;
   z-index: 99;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
   .hamburg-btn {
     display: flex;
   }
@@ -291,7 +291,7 @@ figure {
   letter-spacing: 3rem;
   position: relative;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
   .c-header__items .__item a {
     display: none;
   }
@@ -311,7 +311,7 @@ figure {
   color: #fff;
   position: relative;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
   .c-header__items .__item_input a {
     display: none;
   }
@@ -336,7 +336,7 @@ figure {
   font-size: 22rem;
   color: #080808;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
   .c-header__la {
     display: none;
   }
@@ -1048,7 +1048,12 @@ figure {
   gap: 25px;
   padding: 15px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
+  .p-main .apply .des {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 767px) {
   .p-main .apply .des {
     width: calc(100% - 60px);
     margin: auto;
@@ -1082,12 +1087,11 @@ figure {
 }
 .p-main .apply .set_apply {
   display: flex;
-  padding: 20px;
-  flex-direction: column;
+  padding: 10px;
   align-items: center;
   width: 23%;
-  justify-content: center;
   gap: 10px;
+  justify-content: center;
 }
 @media screen and (max-width: 767px) {
   .p-main .apply .set_apply {
@@ -1097,7 +1101,8 @@ figure {
   }
 }
 .p-main .apply .set_apply_des1 {
-  width: 100%;
+  width: 70%;
+  height: 100%;
 }
 .p-main .apply .set_apply_btn {
   display: flex;
@@ -1115,7 +1120,17 @@ figure {
   height: 40px;
 }
 .p-main .apply .set_apply_des2 {
-  width: 100%;
+  width: 70px;
+  height: 70px;
+}
+@media screen and (max-width: 767px) {
+  .p-main .apply .set_apply_des2 {
+    width: 80px;
+    height: 80px;
+  }
+}
+.p-main .apply .set_apply_des2:hover {
+  opacity: 0.7;
 }
 .p-main .img_des_1 {
   display: flex;
