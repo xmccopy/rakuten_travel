@@ -941,10 +941,11 @@ figure {
 }
 .p-main .shops_part2 .shop_items .img_hotel {
   position: absolute;
-  color: #312f2f;
+  color: #ffffff;
   font-size: 20px;
+  letter-spacing: 4px;
   top: 5%;
-  left: 50%;
+  left: 43%;
   z-index: 10;
   font-weight: bold;
   transform: translate(-50%, -50%);

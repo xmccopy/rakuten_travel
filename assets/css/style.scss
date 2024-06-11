@@ -321,18 +321,26 @@
 
         .img_hotel {
           position: absolute;
-          color: #312f2f;
+          color: #ffffff;
           font-size: 20px;
+          letter-spacing: 4px;
           top: 5%;
-          left: 50%;
+          left: 43%;
           z-index: 10;
           font-weight: bold;
           transform: translate(-50%, -50%);
-
           @include media-sp {
             top: 7%;
             font-size: 15px;
           }
+          // &::after {
+          //   content: "";
+          //   position: absolute;
+          //   width: 100%;
+          //   height: auto;
+          //   background-color: #312f2f;
+          //   z-index: 5;
+          // }
         }
       }
     }
