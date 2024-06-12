@@ -28,28 +28,34 @@
 
  .slide__content {
      position: absolute;
-     top: 65%;
+     top: 80%;
      left: 30%;
-     width: 40%;
+     width: 30%;
  }
 
 
 
- @media screen and (max-width:1280px) {
+ @media screen and (max-width:1440px) {
     .slide__content {
-        top: 70%;
-        width: 40%;
+        top: 82%;
+        width: 36%;
     }
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:1280px) {
         .slide__content {
-            top: 73%;
-            width: 90%;
+            top: 83%;
+            width: 40%;
+        }
+        @media screen and (max-width:767px) {
+            .slide__content {
+                top: 73%;
+                width: 90%;
+            }
         }
     }
 }
 
  .slide__content__left {
-     left: 5%;
+     left: 3%;
  }
 
  .slide__content__right {
