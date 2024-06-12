@@ -28,16 +28,17 @@
 
  .slide__content {
      position: absolute;
-     top: 60%;
+     top: 65%;
      left: 30%;
+     width: 40%;
  }
 
 
 
  @media screen and (max-width:1280px) {
     .slide__content {
-        top: 60%;
-        width: 90%;
+        top: 70%;
+        width: 40%;
     }
     @media screen and (max-width:767px) {
         .slide__content {
