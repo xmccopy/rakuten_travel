@@ -665,15 +665,15 @@ figure {
 .p-main .p-fv_tlt {
   position: absolute;
   z-index: 50;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 20px;
   top: 47%;
   left: 10%;
   transform: translate(-50%, -50%);
   background-color: rgba(141, 16, 0, 0.5019607843);
   color: #ffffff;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
