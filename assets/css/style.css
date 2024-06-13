@@ -744,6 +744,12 @@ figure {
   width: 300px;
   height: 300px;
 }
+@media screen and (max-width: 767px) {
+  .p-main .top_des_mark {
+    width: 200px;
+    height: 200px;
+  }
+}
 .p-main .room_describe {
   margin-top: 40px;
   border: 2px #d47602 solid;
@@ -752,7 +758,6 @@ figure {
 }
 .p-main .room_describe_des {
   display: flex;
-  gap: 20px;
   align-items: center;
   justify-content: space-between;
 }
@@ -778,21 +783,21 @@ figure {
 .p-main .room_describe_des .part1_plane_des_room {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
 }
 .p-main .room_describe_des .part1_plane_des_room .text_room {
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 10px;
+  line-height: 15px;
 }
 @media screen and (max-width: 767px) {
   .p-main .room_describe_des .part1_plane_des_room .text_room {
-    font-size: 13px;
-    line-height: 15px;
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 .p-main .room_describe_des .part1_plane_img {
-  width: 30%;
-  height: 150px;
+  width: 53%;
+  height: 80%;
 }
 @media screen and (max-width: 767px) {
   .p-main .room_describe_des .part1_plane_img {
@@ -801,7 +806,7 @@ figure {
 }
 .p-main .room_describe_des .part2 {
   display: flex;
-  width: 55%;
+  width: 65%;
   justify-content: space-between;
   align-items: center;
 }
@@ -814,7 +819,7 @@ figure {
 }
 .p-main .room_describe_des .part2_img {
   width: 49%;
-  height: 200px;
+  height: 100%;
 }
 @media screen and (max-width: 767px) {
   .p-main .room_describe_des .part2_img {
@@ -836,7 +841,7 @@ figure {
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   width: 30%;
   gap: 30px;
@@ -1184,10 +1189,12 @@ figure {
 }
 .p-main .img_des_1 {
   display: flex;
+  height: 65vh;
 }
 @media screen and (max-width: 767px) {
   .p-main .img_des_1 {
     flex-direction: column;
+    height: 100%;
   }
 }
 .p-main .img_des_1_image {
@@ -1196,7 +1203,7 @@ figure {
 @media screen and (max-width: 767px) {
   .p-main .img_des_1_image {
     width: calc(100% - 60px);
-    margin: auto;
+    margin: 0 auto;
     height: 300px;
   }
 }
@@ -1209,10 +1216,15 @@ figure {
   background-color: #e6e6e6;
   gap: 30px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
+  .p-main .img_des_1_text {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 767px) {
   .p-main .img_des_1_text {
     width: calc(100% - 60px);
-    margin: auto;
+    margin: 0 auto;
     padding: 20px 30px 20px 30px;
   }
 }
@@ -1239,14 +1251,23 @@ figure {
 }
 .p-main .img_des_2 {
   display: flex;
+  height: 65vh;
 }
 @media screen and (max-width: 767px) {
   .p-main .img_des_2 {
     flex-direction: column-reverse;
+    height: 100%;
   }
 }
 .p-main .img_des_2_image {
   width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .p-main .img_des_2_image {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    height: 300px;
+  }
 }
 .p-main .img_des_2_text {
   width: 50%;
@@ -1257,15 +1278,38 @@ figure {
   background-color: #e6e6e6;
   gap: 30px;
 }
+@media screen and (max-width: 1024px) {
+  .p-main .img_des_2_text {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 767px) {
+  .p-main .img_des_2_text {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    padding: 20px 30px 20px 30px;
+  }
+}
 .p-main .img_des_2_text .tlt {
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 25px;
   text-align: center;
-  font-size: 30px;
-  line-height: 35px;
+}
+@media screen and (max-width: 767px) {
+  .p-main .img_des_2_text .tlt {
+    font-size: 20px;
+  }
 }
 .p-main .img_des_2_text .text_des {
   text-align: left;
   font-size: 12px;
   line-height: 20px;
+}
+@media screen and (max-width: 767px) {
+  .p-main .img_des_2_text .text_des {
+    font-size: 13px;
+  }
 }
 .p-main .part3 {
   display: flex;

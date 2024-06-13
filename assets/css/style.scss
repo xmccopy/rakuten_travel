@@ -119,6 +119,10 @@
       margin-bottom: 20px;
       width: 300px;
       height: 300px;
+      @include media-sp {
+        width: 200px;
+        height: 200px;
+      }
     }
   }
 
@@ -130,7 +134,6 @@
 
     &_des {
       display: flex;
-      gap: 20px;
       align-items: center;
       justify-content: space-between;
 
@@ -154,22 +157,22 @@
         &_plane_des_room {
           display: flex;
           flex-direction: column;
-          gap: 20px;
+          gap: 5px;
 
           .text_room {
-            font-size: 12px;
-            line-height: 20px;
+            font-size: 10px;
+            line-height: 15px;
 
             @include media-sp {
-              font-size: 13px;
-              line-height: 15px;
+              font-size: 15px;
+              line-height: 20px;
             }
           }
         }
 
         &_plane_img {
-          width: 30%;
-          height: 150px;
+          width: 53%;
+          height: 80%;
 
           @include media-sp {
             width: 50%;
@@ -179,7 +182,7 @@
 
       .part2 {
         display: flex;
-        width: 55%;
+        width: 65%;
         justify-content: space-between;
         align-items: center;
 
@@ -191,7 +194,7 @@
 
         &_img {
           width: 49%;
-          height: 200px;
+          height: 100%;
 
           @include media-sp {
             width: 100%;
@@ -215,7 +218,7 @@
       padding: 10px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       flex-direction: column;
       width: 30%;
       gap: 30px;
@@ -599,9 +602,11 @@
   //food
   .img_des_1 {
     display: flex;
+    height: 65vh;
 
     @include media-sp {
       flex-direction: column;
+      height: 100%;
     }
 
     &_image {
@@ -609,7 +614,7 @@
 
       @include media-sp {
         width: calc(100% - 60px);
-        margin: auto;
+        margin: 0 auto;
         height: 300px;
       }
     }
@@ -623,10 +628,14 @@
       background-color: #e6e6e6;
       gap: 30px;
 
-      @include media-sp {
-        width: calc(100% - 60px);
-        margin: auto;
-        padding: 20px 30px 20px 30px;
+      @include media-pc {
+        padding: 30px;
+
+        @include media-sp {
+          width: calc(100% - 60px);
+          margin: 0 auto;
+          padding: 20px 30px 20px 30px;
+        }
       }
 
       .tlt {
@@ -654,14 +663,23 @@
 
   .img_des_2 {
     display: flex;
+    height: 65vh;
 
     @include media-sp {
       flex-direction: column-reverse;
-
+      height: 100%;
     }
+
+
 
     &_image {
       width: 50%;
+
+      @include media-sp {
+        width: calc(100% - 60px);
+        margin: 0 auto;
+        height: 300px;
+      }
     }
 
     &_text {
@@ -673,16 +691,36 @@
       background-color: #e6e6e6;
       gap: 30px;
 
+      @include media-pc {
+        padding: 30px;
+
+        @include media-sp {
+          width: calc(100% - 60px);
+          margin: 0 auto;
+          padding: 20px 30px 20px 30px;
+        }
+      }
+
+
       .tlt {
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 25px;
         text-align: center;
-        font-size: 30px;
-        line-height: 35px;
+
+        @include media-sp {
+          font-size: 20px;
+        }
       }
 
       .text_des {
         text-align: left;
         font-size: 12px;
         line-height: 20px;
+
+        @include media-sp {
+          font-size: 13px;
+        }
       }
     }
   }
