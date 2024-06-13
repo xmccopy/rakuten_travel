@@ -49,6 +49,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
       @include media-sp {
         left: 50%;
       }
@@ -258,11 +259,11 @@
 
     &_part1 {
       display: flex;
-      
+
       @include media-sp {
         flex-direction: column;
       }
-      
+
       .shop_items {
         width: 33.33333333%;
         position: relative;
@@ -298,6 +299,7 @@
             font-size: 15px;
             font-weight: bold;
           }
+
           &:active {
             color: #8d4e00;
           }
@@ -305,7 +307,7 @@
 
       }
     }
-    
+
     .link_btn {
       padding: 3px 10px 3px 10px;
       background-color: #d47502b0;
@@ -313,9 +315,11 @@
       width: 100px;
       text-align: center;
       cursor: pointer;
+
       &:hover {
         background-color: #8d4e00;
       }
+
       &:active {
         background-color: #ffffff;
         border: 1px #8d4e00 solid;
@@ -332,13 +336,12 @@
       .shop_items {
         width: 33.33333333%;
         position: relative;
-        width: 80%;
-        
+
         @include media-sp {
           width: 100%;
           margin: auto;
         }
-        
+
         .shop_img {
           width: 100%;
           height: 80%;
@@ -371,18 +374,55 @@
 
         .img_hotel {
           position: absolute;
-          color: #ffffff;
-          font-size: 20px;
-          letter-spacing: 4px;
-          top: 5%;
-          left: 43%;
+          color: #000000;
+          font-size: 18px;
+          top: -17%;
+          left: 40%;
           z-index: 10;
-          font-weight: bold;
           transform: translate(-50%, -50%);
 
           @include media-sp {
             top: 7%;
             font-size: 15px;
+            left: 37%;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 3px 10px 3px 10px;
+            background-color: #d47502b0;
+            border-radius: 15px;
+            width: 100px;
+            text-align: center;
+          }
+
+          // &::after {
+          //   content: "";
+          //   position: absolute;
+          //   width: 100%;
+          //   height: auto;
+          //   background-color: #312f2f;
+          //   z-index: 5;
+          // }
+        }
+
+        .img_hotel_btn {
+          position: absolute;
+          color: #ffffff;
+          font-size: 12px;
+          background-color: #0d4252;
+          width: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 5px;
+          bottom: 20%;
+          right: 0;
+          z-index: 10;
+
+          @include media-sp {
+            font-size: 15px;
+            width: 100px;
+            bottom: 0%;
+
           }
 
           // &::after {
@@ -396,6 +436,7 @@
         }
       }
     }
+
   }
 
   .location {
@@ -545,6 +586,7 @@
       @include media-pc {
         width: 40%;
         padding: 15px;
+
         @include media-sp {
           width: calc(100% - 160px);
           margin: auto;
